@@ -8,12 +8,12 @@
 Summary:	New Transport-independent RPC (TI-RPC) library
 Summary(pl.UTF-8):	Nowa biblioteka Transport-independent RPC (TI-RPC)
 Name:		ntirpc
-Version:	4.0
+Version:	6.3
 Release:	1
 License:	BSD
 Group:		Libraries
-Source0:	https://download.nfs-ganesha.org/4/4.0/%{name}-%{version}.tar.gz
-# Source0-md5:	17b0baada54936dcde80eba27bb6d88d
+Source0:	https://download.nfs-ganesha.org/6/6.5/%{name}-%{version}.tar.gz
+# Source0-md5:	3529e278214601f177661ff35cb70af8
 URL:		https://github.com/nfs-ganesha/ntirpc
 BuildRequires:	cmake >= 2.6.3
 %{?with_gssapi:BuildRequires:	krb5-devel}
@@ -73,7 +73,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS COPYING ChangeLog NEWS README THANKS TODO
-%attr(755,root,root) %{_libdir}/libntirpc.so.4.0
+%attr(755,root,root) %{_libdir}/libntirpc.so.6.3
 
 %files devel
 %defattr(644,root,root,755)
